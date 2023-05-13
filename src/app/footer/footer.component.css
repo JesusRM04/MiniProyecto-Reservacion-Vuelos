@@ -1,0 +1,24 @@
+button{
+    background-color: white;
+    border: solid 1px white;
+}
+li{
+    list-style: none;
+}
+.mat-tree{
+    background-color: rgb(13, 110, 253);
+    color: white;
+}
+footer{
+    color: white;
+}
+img{
+    text-align: center;
+    width: 200px;
+    height: auto;
+}
+h4{
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+}

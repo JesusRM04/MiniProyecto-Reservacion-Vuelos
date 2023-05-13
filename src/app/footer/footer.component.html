@@ -1,0 +1,37 @@
+<footer class="bg-primary border-top border-dark border-bottom py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p><mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+            <!-- This is the tree node template for leaf nodes -->
+            <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+              <!-- use a disabled button to provide padding for tree leaf -->
+              <button mat-icon-button disabled></button>
+              {{node.name}}
+            </mat-tree-node>
+            <!-- This is the tree node template for expandable nodes -->
+            <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+              <button mat-icon-button matTreeNodeToggle
+                      [attr.aria-label]="'Toggle ' + node.name">
+                <mat-icon class="mat-icon-rtl-mirror">
+                  {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                </mat-icon>
+              </button>
+              {{node.name}}
+            </mat-tree-node>
+          </mat-tree>
+          
+          
+          
+          
+          
+          </p>
+        </div>
+        <div class="col-md-6">
+            <h4>Volamos contigo</h4>
+            <img [src]="rutaimg" alt="Volamos contigo">
+        </div>
+      </div>
+    </div>
+  </footer>
+  

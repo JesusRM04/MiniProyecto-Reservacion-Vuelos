@@ -9,6 +9,15 @@ import { ReservaComponent } from './reserva/reserva.component';
 import { AcercavuelosComponent } from './acercavuelos/acercavuelos.component';
 import { AcercaempresaComponent } from './acercaempresa/acercaempresa.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
+import {MatTreeModule} from '@angular/material/tree';
+import { MatIconModule } from '@angular/material/icon'
+import {MatDividerModule} from '@angular/material/divider';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
+
+
 
 @NgModule({
   declarations: [
@@ -17,12 +26,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     ReservaComponent,
     AcercavuelosComponent,
-    AcercaempresaComponent
+    AcercaempresaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTreeModule,
+    MatIconModule,
+    MatDividerModule,
+    MatTabsModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
