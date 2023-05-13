@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ReservaComponent } from './reserva/reserva.component';
 import { AcercavuelosComponent } from './acercavuelos/acercavuelos.component';
 import { AcercaempresaComponent } from './acercaempresa/acercaempresa.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AcercaempresaComponent } from './acercaempresa/acercaempresa.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
