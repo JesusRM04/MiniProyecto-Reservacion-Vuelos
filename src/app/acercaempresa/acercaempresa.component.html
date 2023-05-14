@@ -26,3 +26,33 @@
 
   <mat-divider></mat-divider>
   <br>
+
+
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10">
+        <h3 class="text-center mb-4 tit"> Reseñas  </h3>
+        
+        <table class="table table-hover table-dark table-striped">
+          <thead>
+            <tr>
+              
+              
+            </tr>
+          </thead>
+        
+          <tbody *ngFor="let persona of data.data">
+            <tr class="table-light">
+              <td> <img [src]="persona.avatar" alt="" width="45%" /> </td>
+              <td>
+                <tr>{{persona.email}}</tr>
+                <tr>{{persona.first_name}} {{persona.last_name}}</tr></td>
+              <td>"Fue un viaje excelente"</td>
+              
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
