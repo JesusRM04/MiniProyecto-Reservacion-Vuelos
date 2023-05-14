@@ -1,15 +1,115 @@
-<h1>Carrusel</h1>
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img [src]="rutaimgC1" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>BlueFlights</h5>
+          <p>"Volamos Contigo".</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img [src]="rutaimgC2" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Aeropuertos Increibles</h5>
+          <p>Te reservamos en las aerolineas mas increibles.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img [src]="rutaimgC3" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Boletos Para ti</h5>
+          <p>Boletos que te llevan a donde siempre soñaste.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br>
 <mat-divider></mat-divider>
-<h1>aaaas</h1>
+<br>
+<div class="yutub">
+    <section class="bg-primary text-dark py-4">
+        <div class="container">
+          <h2 class="display-4 text-white mb-0">Siempre hay un Avion en el Cielo</h2>
+          <div class="embed-responsive embed-responsive-16by9 mt-3">
+           
+          </div>
+        </div>
+      </section>
+      <iframe
+      width="560"
+      height="315"
+      [src]="video | domseguro:'https://www.youtube.com/embed/' "
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+     ></iframe>
+</div>
+<br>
 <mat-divider></mat-divider>
 <mat-tab-group>
-    <mat-tab label="First"> Content 1 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
+    <mat-tab label="Nuestro Compromiso" > 
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <p class="text-justify text-muted my-4 lead">
+                    En nuestra empresa, estamos comprometidos con brindar
+                    un servicio excepcional a nuestros clientes en todo momento. Nos enorgullece ofrecer un servicio de reservas de boletos de avión
+                    eficiente y confiable, diseñado para satisfacer las necesidades y expectativas de nuestros clientes.
+                    Creemos que el compromiso con nuestros clientes comienza con la atención al detalle y la comunicación clara y abierta en todas las
+                    etapas del proceso de reserva. Desde el momento en que nuestros clientes hacen su consulta, hasta el momento en que despegan en
+                    su vuelo, nos aseguramos de que cada paso sea fácil y sin problemas.
+                    Nuestro objetivo es proporcionar a nuestros clientes un servicio personalizado, de alta calidad y con un enfoque en la satisfacción
+                    del cliente. Nuestro equipo altamente capacitado y experimentado está siempre disponible para responder a cualquier pregunta o
+                    inquietud, y se esfuerza por garantizar que cada experiencia de viaje sea lo más agradable posible.
+                    En resumen, nuestro compromiso con nuestros clientes es brindar un servicio excepcional en cada etapa del proceso de reserva,
+                    y estamos constantemente buscando maneras de mejorar y optimizar nuestro servicio para satisfacer las necesidades de nuestros clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+        
+    </mat-tab>
+    <mat-tab label="¿Por que viajar en avion?">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <p class="text-justify text-muted my-4 lead">
+                    Viajar en avión es una de las formas más cómodas de desplazarse por el mundo. Los aviones modernos ofrecen una gran cantidad
+                    de comodidades para hacer que el vuelo sea lo más agradable posible. Desde asientos espaciosos y reclinables hasta entretenimiento
+                    a bordo, como películas, música y juegos, hay algo para todos en un vuelo. Además, los servicios de comidas y bebidas,
+                    así como las opciones especiales para dietas, aseguran que los pasajeros se sientan bien alimentados durante todo el vuelo.
+                    Las aerolíneas también trabajan arduamente para asegurar que sus aviones estén bien mantenidos y limpios, lo que contribuye
+                    aún más a la comodidad del pasajero. En resumen, volar puede ser una experiencia cómoda y relajante, lo que hace que sea la opción
+                    perfecta para aquellos que quieren llegar a su destino de manera rápida y sin estrés.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+    </mat-tab>
+    
   </mat-tab-group>
-
-  <button mat-raised-button
-  matTooltip="Info about the action"
-  aria-label="Button that displays a tooltip when focused or hovered over">
-Action
-</button> 
+  <mat-divider></mat-divider>
+  <div class="seccfin">
+  <div class="container mt-4">
+    <h2>¿Quieres saber más?</h2>
+    <hr>
+    <br>
+    <h4>Revisa más opciones</h4>
+    <button class="btn btn-primary btn-lg mt-4" mat-raised-button
+      matTooltip="Ir hacia American Airlines"
+      aria-label="Button that displays a tooltip when focused or hovered over">Pulsa Aqui</button>
+  </div>
+  </div>

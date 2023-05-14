@@ -1,0 +1,62 @@
+.d-block {
+    width: 300px;
+    height: 500px;
+    
+}
+
+.carousel-caption > h5{
+    font-size: 50px;
+}
+.carousel-caption{
+    padding: 6px;
+    font-size: 30px;
+    color:  white;
+    
+ 
+  -webkit-text-stroke: 1px #000000;
+  
+}
+.yutub{
+    text-align: center;
+    border: solid 2px black;
+    background-color: black;
+}
+.container > h2{
+    -webkit-text-stroke: 1px #000000;
+    font-size: 40px;
+}
+
+.divmat{
+    padding: 5px;
+    font-size: 20px;
+    
+}
+
+.btn-primary {
+    background-color: rgb(13, 110, 253);
+    border-color: rgb(13, 110, 253);
+    padding: 16px 32px;
+    font-size: 24px;
+    border-radius: 8px;
+  }
+  .btn-primary:hover{
+    background-color: white;
+    color: black;
+    border-color: rgb(13, 110, 253);
+    padding: 16px 32px;
+    font-size: 24px;
+    border-radius: 8px;
+  }
+  .btn-lg:hover {
+    padding: 20px 40px;
+    font-size: 28px;
+  }
+  .btn-lg {
+    padding: 20px 40px;
+    font-size: 28px;
+  }
+
+  .seccfin{
+    text-align: center;
+    padding: 8px;
+  }
