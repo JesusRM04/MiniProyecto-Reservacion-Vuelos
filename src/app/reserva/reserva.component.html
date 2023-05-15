@@ -1,1 +1,51 @@
-<p>reserva works!</p>
+<div>
+    <div class="container">
+    <form >
+      <div class="form-group">
+      <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="name" class="form-control">
+    </div>
+  
+    <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="email" class="form-control">
+    </div>
+    <div class="form-group">
+    <label for="email">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" [(ngModel)]="fecha" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="lang">Horario</label>
+        <select name="horarios" id="horario" name="horario" [(ngModel)]="horario" class="form-control">
+          <option *ngFor="let opcion of horarios" [value]="opcion">{{ opcion}}</option>
+        </select>
+    </div>
+    <br>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary" (click)="agregarPersona(name, email, fecha,horario)">Enviar</button>
+    </div>
+  
+  </form>
+  </div>
+  <br><br><br><br>
+  <div class="container">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+      <th scope="col">Usuario</th>
+      <th scope="col">Email</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Horario</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let usuario of datos" >
+      <tr>
+        <td>{{usuario.name}}</td>
+        <td>{{usuario.email}}</td>
+        <td>{{usuario.fecha}}</td>
+        <td>{{usuario.horario}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>

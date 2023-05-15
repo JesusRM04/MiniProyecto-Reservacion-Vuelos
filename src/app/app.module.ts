@@ -17,6 +17,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { DomseguroPipe } from './domseguro.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     AcercavuelosComponent,
     AcercaempresaComponent,
     FooterComponent,
-    DomseguroPipe
+    DomseguroPipe,
+    
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatDividerModule,
     MatTabsModule,
     MatTooltipModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
